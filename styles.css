@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif; /* Set Playfair Display as the default font */
+    background-color: #FFFDF9;
+    color: #333;
+    height: 100vh; /* Ensure the body height fills the viewport */
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #5CA09E; /* Teal color */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    background-color: #489b8d; /* Darker shade for hover effect */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    position: relative;
+    height: 100vh; /* Make header fill the full viewport height */
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.logo h1 {
+    font-size: 1.5em; /* Adjusted for better readability */
+    font-family: 'TT Commons Pro', sans-serif; /* Override to use Anton font */
+    line-height: 1.5;
+    color: #5CA09E; /* Teal color for the rest of the word */
+}
+
+.logo .highlight {
+    
+    color: #fca3a2; /* Pink color for the first letter of each word */
+    font-weight: bold;
+}
+
+.main-heading {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.background-text {
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+    font-size: 252px; /* Fixed font size similar to Canva's 252-point size */
+    color: #feaeac; /* Faded pink color for the large background text */
+    margin: 0;
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    overflow: hidden; /* Ensures text doesn't overflow its container */
+    text-align: center;
+    line-height: 1; /* Makes the text vertically compact */
+    letter-spacing: 20px; /* Adds space between each letter */
+    position: relative; /* Keeps it within the main flow */
+    z-index: 0;
+}
+
+.tagline {
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
+    font-size: 46px; /* Set font size to 46px */
+    color: white;
+    background-color: rgba(92, 160, 158, 0.76); /* Teal color with 76% transparency */
+    padding: 10px 0; /* Adjust padding for better appearance */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the tagline over "HEAL" */
+    width: 100vw; /* Makes the background strip extend across the entire viewport */
+    text-align: center;
+    z-index: 1; /* Ensures the tagline appears above the "HEAL" text */
+}
