@@ -1,5 +1,3 @@
-/* Additional styles for the new section */
-
 /* General Reset */
 * {
     margin: 0;
@@ -39,6 +37,7 @@ nav ul li a {
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 3px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 nav ul li a:hover {
@@ -98,7 +97,7 @@ header {
     font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
     font-size: 4vw; /* Use vw to make it responsive */
     color: white;
-    background-color: rgba(92, 160, 158, 0.76); /* Teal color with 76% transparency */
+    background-color: rgba(92, 160, 158, 0.85); /* Teal color with higher opacity */
     padding: 10px 0;
     position: absolute;
     top: 50%;
@@ -151,79 +150,44 @@ header {
     .image {
         width: 80%; /* Smaller screens: make image take up more space */
     }
-}
-/* Contact Section */
-.contact-section {
-    padding: 40px 5%;
-    background-color: #FFFDF9;
-}
 
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    header {
+        padding: 30px 10px; /* Reduce padding for smaller screens */
+        height: auto; /* Allow the header to size based on content */
+    }
 
-.contact-info {
-    flex: 1;
-    text-align: right;
-}
-
-.contact-info h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.contact-details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.contact-details p {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.logo {
-    flex: 1;
-    text-align: left;
-}
-
-.logo h1 {
-    font-size: 1.5em;
-    font-family: 'TT Commons Pro', sans-serif;
-    line-height: 1.5;
-    color: #5CA09E; /* Teal color */
-}
-
-.logo .highlight {
-    color: #fca3a2; /* Pink color for the first letter of each word */
-    font-weight: bold;
+    .tagline {
+        font-size: 5vw; /* Adjust the tagline size on smaller screens */
+    }
 }
 
 /* Contact Section */
 .contact-section {
-    background-color: #FFFDF9; /* Match the background color */
     padding: 60px 0; /* Padding for top and bottom spacing */
+    background-color: #FFFDF9;
     width: 100%;
     height: 100vh; /* Full viewport height for centering */
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center; /* Center-align text within the container */
-    position: relative; /* Position relative for logo placement */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px; /* Add spacing under the heading */
 }
 
 .contact-logo {
@@ -243,22 +207,4 @@ header {
 .contact-logo .highlight {
     color: #fca3a2; /* Pink color for the first letter */
     font-weight: bold;
-}
-
-.contact-heading {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    color: #333;
-    margin: 0; /* Remove default margin */
-    text-align: center; /* Ensure heading is centered */
-}
-@media (max-width: 768px) {
-    header {
-        padding: 30px 10px; /* Reduce padding for smaller screens */
-        height: auto; /* Allow the header to size based on content */
-    }
-
-    .tagline {
-        font-size: 5vw; /* Adjust the tagline size on smaller screens */
-    }
 }
