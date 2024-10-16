@@ -6,17 +6,14 @@
 }
 
 body {
-    font-family: 'Playfair Display', serif; /* Set Playfair Display as the default font */
+    font-family: 'Playfair Display', serif;
     background-color: #FFFDF9;
     color: #333;
-    height: 100%;
-    margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #5CA09E; /* Teal color */
+    background-color: #5CA09E;
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -49,62 +46,39 @@ header {
     justify-content: center;
     align-items: center;
     padding: 60px 20px;
-    background-color: #fff;
+    height: 50vh; /* Adjusted height */
     position: relative;
-    height: 100vh; /* Make header fill the full viewport height */
-}
-
-.logo {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-}
-
-.logo h1 {
-    font-size: 1.5em; /* Adjusted for better readability */
-    font-family: 'TT Commons Pro', sans-serif; /* Override to use Anton font */
-    line-height: 1.5;
-    color: #5CA09E; /* Teal color for the rest of the word */
-}
-
-.logo .highlight {
-    color: #fca3a2; /* Pink color for the first letter of each word */
-    font-weight: bold;
 }
 
 .main-heading {
     text-align: center;
     position: relative;
-    width: 100%;
 }
 
 .background-text {
-    font-family: 'Anton', sans-serif; /* Apply Anton font */
-    font-size: 25vw; /* Use vw to make it responsive */
-    color: #feaeac; /* Faded pink color for the large background text */
+    font-family: 'Anton', sans-serif;
+    font-size: 25vw;
+    color: #feaeac;
     margin: 0;
-    white-space: nowrap; /* Prevents text from wrapping to a new line */
-    overflow: hidden; /* Ensures text doesn't overflow its container */
+    white-space: nowrap;
+    overflow: hidden;
     text-align: center;
-    line-height: 1; /* Makes the text vertically compact */
-    letter-spacing: 5vw; /* Adjust spacing for responsiveness */
-    position: relative; /* Keeps it within the main flow */
-    z-index: 0;
+    line-height: 1;
+    letter-spacing: 5vw;
 }
 
 .tagline {
-    font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
-    font-size: 4vw; /* Use vw to make it responsive */
+    font-family: 'Playfair Display', serif;
+    font-size: 4vw;
     color: white;
-    background-color: rgba(92, 160, 158, 0.76); /* Teal color with 76% transparency */
+    background-color: rgba(92, 160, 158, 0.76);
     padding: 10px 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centers the tagline over "HEAL" */
-    width: 100vw; /* Makes the background strip extend across the entire viewport */
+    transform: translate(-50%, -50%);
+    width: 100vw;
     text-align: center;
-    z-index: 1; /* Ensures the tagline appears above the "HEAL" text */
 }
 
 /* Info Section */
@@ -132,9 +106,9 @@ header {
 }
 
 .image {
-    width: 40%; /* Adjust for responsiveness */
-    height: auto; /* Maintain aspect ratio */
-    border: 2px solid #5CA09E; /* Teal border */
+    width: 40%;
+    height: auto;
+    border: 2px solid #5CA09E;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -143,4 +117,25 @@ header {
 @media (max-width: 768px) {
     .info-container {
         flex-direction: column;
- &#8203;:contentReference[oaicite:0]{index=0}&#8203;
+        align-items: center;
+    }
+    .image {
+        width: 80%; /* Make images larger on smaller screens */
+        margin: 0 0 20px 0;
+    }
+    .text-block {
+        text-align: center; /* Center text for smaller screens */
+    }
+}
+
+.contact-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #5CA09E; /* Teal background */
+    color: white;
+}
+
+.contact-heading {
+    font-size: 2em;
+    font-weight: bold;
+}
