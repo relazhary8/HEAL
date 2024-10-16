@@ -37,7 +37,6 @@ nav ul li a {
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 3px;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 nav ul li a:hover {
@@ -97,7 +96,7 @@ header {
     font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
     font-size: 4vw; /* Use vw to make it responsive */
     color: white;
-    background-color: rgba(92, 160, 158, 0.85); /* Teal color with higher opacity */
+    background-color: rgba(92, 160, 158, 0.76); /* Teal color with 76% transparency */
     padding: 10px 0;
     position: absolute;
     top: 50%;
@@ -144,67 +143,4 @@ header {
 @media (max-width: 768px) {
     .info-container {
         flex-direction: column;
-        text-align: center;
-    }
-
-    .image {
-        width: 80%; /* Smaller screens: make image take up more space */
-    }
-
-    header {
-        padding: 30px 10px; /* Reduce padding for smaller screens */
-        height: auto; /* Allow the header to size based on content */
-    }
-
-    .tagline {
-        font-size: 5vw; /* Adjust the tagline size on smaller screens */
-    }
-}
-
-/* Contact Section */
-.contact-section {
-    padding: 60px 0; /* Padding for top and bottom spacing */
-    background-color: #FFFDF9;
-    width: 100%;
-    height: 100vh; /* Full viewport height for centering */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Center-align text within the container */
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.contact-heading {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 30px; /* Add spacing under the heading */
-}
-
-.contact-logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-align: left;
-}
-
-.contact-logo h1 {
-    font-size: 1.5em; /* Adjust size for readability */
-    font-family: 'TT Commons Pro', sans-serif; /* Use the specified font */
-    line-height: 1.5;
-    color: #5CA09E; /* Teal color for consistency */
-}
-
-.contact-logo .highlight {
-    color: #fca3a2; /* Pink color for the first letter */
-    font-weight: bold;
-}
+ &#8203;:contentReference[oaicite:0]{index=0}&#8203;
