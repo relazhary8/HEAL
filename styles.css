@@ -250,3 +250,7 @@ header {
     margin: 0; /* Remove default margin */
     text-align: center; /* Ensure heading is centered */
 }
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+ &#8203;:contentReference[oaicite:0]{index=0}&#8203;
