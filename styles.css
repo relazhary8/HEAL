@@ -6,14 +6,17 @@
 }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif; /* Set Playfair Display as the default font */
     background-color: #FFFDF9;
     color: #333;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #5CA09E;
+    background-color: #5CA09E; /* Teal color */
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -46,44 +49,62 @@ header {
     justify-content: center;
     align-items: center;
     padding: 60px 20px;
-    height: 50vh; /* Adjusted height */
+    background-color: #fff;
     position: relative;
+    height: 100vh; /* Make header fill the full viewport height */
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.logo h1 {
+    font-size: 1.5em; /* Adjusted for better readability */
+    font-family: 'TT Commons Pro', sans-serif; /* Override to use Anton font */
+    line-height: 1.5;
+    color: #5CA09E; /* Teal color for the rest of the word */
+}
+
+.logo .highlight {
+    color: #fca3a2; /* Pink color for the first letter of each word */
+    font-weight: bold;
 }
 
 .main-heading {
     text-align: center;
     position: relative;
-}
-
-.logo {
-    max-width: 200px; /* Adjust the size of the logo as needed */
-    margin-bottom: 20px; /* Space between logo and title */
+    width: 100%;
 }
 
 .background-text {
-    font-family: 'Anton', sans-serif;
-    font-size: 25vw;
-    color: #feaeac;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+    font-size: 25vw; /* Use vw to make it responsive */
+    color: #feaeac; /* Faded pink color for the large background text */
     margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    overflow: hidden; /* Ensures text doesn't overflow its container */
     text-align: center;
-    line-height: 1;
-    letter-spacing: 5vw;
+    line-height: 1; /* Makes the text vertically compact */
+    letter-spacing: 5vw; /* Adjust spacing for responsiveness */
+    position: relative; /* Keeps it within the main flow */
+    z-index: 0;
 }
 
 .tagline {
-    font-family: 'Playfair Display', serif;
-    font-size: 4vw;
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
+    font-size: 4vw; /* Use vw to make it responsive */
     color: white;
-    background-color: rgba(92, 160, 158, 0.76);
+    background-color: rgba(92, 160, 158, 0.76); /* Teal color with 76% transparency */
     padding: 10px 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
+    transform: translate(-50%, -50%); /* Centers the tagline over "HEAL" */
+    width: 100vw; /* Makes the background strip extend across the entire viewport */
     text-align: center;
+    z-index: 1; /* Ensures the tagline appears above the "HEAL" text */
 }
 
 /* Info Section */
@@ -111,9 +132,9 @@ header {
 }
 
 .image {
-    width: 40%;
-    height: auto;
-    border: 2px solid #5CA09E;
+    width: 40%; /* Adjust for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #5CA09E; /* Teal border */
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -122,25 +143,110 @@ header {
 @media (max-width: 768px) {
     .info-container {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
+
     .image {
-        width: 80%; /* Make images larger on smaller screens */
-        margin: 0 0 20px 0;
-    }
-    .text-block {
-        text-align: center; /* Center text for smaller screens */
+        width: 80%; /* Smaller screens: make image take up more space */
     }
 }
-
+/* Contact Section */
 .contact-section {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #5CA09E; /* Teal background */
-    color: white;
+    padding: 40px 5%;
+    background-color: #FFFDF9;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-details p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    font-family: 'TT Commons Pro', sans-serif;
+    line-height: 1.5;
+    color: #5CA09E; /* Teal color */
+}
+
+.logo .highlight {
+    color: #fca3a2; /* Pink color for the first letter of each word */
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #FFFDF9; /* Match the background color */
+    padding: 60px 0; /* Padding for top and bottom spacing */
+    width: 100%;
+    height: 100vh; /* Full viewport height for centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact-container {
+    text-align: center; /* Center-align text within the container */
+    position: relative; /* Position relative for logo placement */
+}
+
+.contact-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+.contact-logo h1 {
+    font-size: 1.5em; /* Adjust size for readability */
+    font-family: 'TT Commons Pro', sans-serif; /* Use the specified font */
+    line-height: 1.5;
+    color: #5CA09E; /* Teal color for consistency */
+}
+
+.contact-logo .highlight {
+    color: #fca3a2; /* Pink color for the first letter */
+    font-weight: bold;
 }
 
 .contact-heading {
-    font-size: 2em;
-    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #333;
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Ensure heading is centered */
 }
