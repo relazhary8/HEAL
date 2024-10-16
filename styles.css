@@ -252,3 +252,13 @@ header {
     margin: 0; /* Remove default margin */
     text-align: center; /* Ensure heading is centered */
 }
+@media (max-width: 768px) {
+    header {
+        padding: 30px 10px; /* Reduce padding for smaller screens */
+        height: auto; /* Allow the header to size based on content */
+    }
+
+    .tagline {
+        font-size: 5vw; /* Adjust the tagline size on smaller screens */
+    }
+}
